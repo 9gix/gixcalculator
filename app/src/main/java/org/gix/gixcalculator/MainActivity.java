@@ -83,17 +83,22 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void operatorOnClick(View view){
-        if (currentOperator == ""){
+        if (currentOperator.equals("")){
             result = currentNumber;
         } else {
-            if (currentOperator.equals("+")){
-                result += currentNumber;
-            } else if (currentOperator.equals("-")){
-                result -= currentNumber;
-            } else if (currentOperator.equals("x")){
-                result *= currentNumber;
-            } else if (currentOperator.equals("/")){
-                result /= currentNumber;
+            switch (currentOperator){
+                case "+":
+                    result += currentNumber;
+                    break;
+                case "-":
+                    result -= currentNumber;
+                    break;
+                case "x":
+                    result *= currentNumber;
+                    break;
+                case "/":
+                    result /= currentNumber;
+                    break;
             }
         }
 
@@ -107,6 +112,30 @@ public class MainActivity extends ActionBarActivity {
         }
 
         currentNumber = 0;
+        decimalPressed = false;
+        decimalPlace = 0;
+    }
+
+    public void sinOnClick(View view){
+        result = (float) Math.sin(Math.toRadians(currentNumber));
+        calculatorDisplay.setText(String.valueOf(result));
+        currentNumber = result;
+        decimalPressed = false;
+        decimalPlace = 0;
+    }
+
+    public void cosOnClick(View view){
+        result = (float) Math.cos(Math.toRadians(currentNumber));
+        calculatorDisplay.setText(String.valueOf(result));
+        currentNumber = result;
+        decimalPressed = false;
+        decimalPlace = 0;
+    }
+
+    public void tanOnClick(View view){
+        result = (float) Math.tan(Math.toRadians(currentNumber));
+        calculatorDisplay.setText(String.valueOf(result));
+        currentNumber = result;
         decimalPressed = false;
         decimalPlace = 0;
     }

@@ -41,6 +41,38 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:text="@string/sin_btn"
+                android:layout_weight="0.333"
+                android:id="@+id/sin_btn"
+                android:onClick="sinOnClick"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cos_btn"
+                android:layout_weight="0.333"
+                android:id="@+id/cos_btn"
+                android:onClick="cosOnClick"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tan_btn"
+                android:layout_weight="0.333"
+                android:id="@+id/tan_btn"
+                android:onClick="tanOnClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:paddingTop="10dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:text="@string/ac_btn"
                 android:layout_weight="0.25"
                 android:id="@+id/ac_btn"
