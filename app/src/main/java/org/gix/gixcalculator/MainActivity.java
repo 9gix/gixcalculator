@@ -85,21 +85,14 @@ public class MainActivity extends ActionBarActivity {
     public void operatorOnClick(View view){
         if (currentOperator.equals("")){
             result = currentNumber;
-        } else {
-            switch (currentOperator){
-                case "+":
-                    result += currentNumber;
-                    break;
-                case "-":
-                    result -= currentNumber;
-                    break;
-                case "x":
-                    result *= currentNumber;
-                    break;
-                case "/":
-                    result /= currentNumber;
-                    break;
-            }
+        } else if(currentOperator.equals(getString(R.string.plus_btn))){
+            result += currentNumber;
+        } else if (currentOperator.equals(getString(R.string.minus_btn))){
+            result -= currentNumber;
+        } else if (currentOperator.equals(getString(R.string.multiply_btn))){
+            result *= currentNumber;
+        } else if (currentOperator.equals(getString(R.string.divide_btn))){
+            result /= currentNumber;
         }
 
         currentOperator = ((Button) view).getText().toString();
