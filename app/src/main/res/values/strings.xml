@@ -6,16 +6,16 @@
     <string name="sin_btn">sin</string>
     <string name="cos_btn">cos</string>
     <string name="tan_btn">tan</string>
-
+    <string name="log_btn">log</string>
     <string name="ac_btn">AC</string>
     <string name="c_btn">C</string>
     <string name="sqrt_btn">\u221a</string>
     <string name="plus_btn">+</string>
     <string name="minus_btn">-</string>
-    <string name="multiply_btn">x</string>
+    <string name="multiply_btn">\u00D7</string>
     <string name="dot_btn">.</string>
     <string name="equal_btn">=</string>
-    <string name="divide_btn">/</string>
+    <string name="divide_btn">\u00F7</string>
     <string name="one_btn">1</string>
     <string name="two_btn">2</string>
     <string name="three_btn">3</string>

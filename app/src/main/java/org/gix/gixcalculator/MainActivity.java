@@ -132,6 +132,14 @@ public class MainActivity extends ActionBarActivity {
         decimalPlace = 0;
     }
 
+    public void sqrtOnClick(View view){
+        result = (float) Math.sqrt(currentNumber);
+        calculatorDisplay.setText(String.valueOf(result));
+        currentNumber = result;
+        decimalPressed = false;
+        decimalPlace = 0;
+    }
+
     public void tanOnClick(View view){
         result = (float) Math.tan(Math.toRadians(currentNumber));
         calculatorDisplay.setText(String.valueOf(result));
@@ -140,8 +148,8 @@ public class MainActivity extends ActionBarActivity {
         decimalPlace = 0;
     }
 
-    public void sqrtOnClick(View view){
-        result = (float) Math.sqrt(currentNumber);
+    public void logOnClick(View view){
+        result = (float) Math.log(currentNumber);
         calculatorDisplay.setText(String.valueOf(result));
         currentNumber = result;
         decimalPressed = false;
